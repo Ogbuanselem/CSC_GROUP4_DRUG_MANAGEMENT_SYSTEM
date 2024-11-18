@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Inventory Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GO-UNI Drug Inventory Management System</h1>
+    </header>
+
+    <main>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search by drug name or expiry date">
+            <button onclick="filterDrugs()">Search</button>
+        </div>
+        <div class="search-bar">
+        </div>
+
+        <!-- Drug List Table -->
+        <table id="drug-table">
+            <thead>
+                <tr>
+                    <th>Drug Name</th>
+                    <th>Dosage</th>
+                    <th>Manufacturer</th>
+                    <th>Expiry Date</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="drug-table-body">
+                <!-- Dynamic rows will be added here by JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Add New Drug Form -->
+        <div class="form-container">
+            <h3>Add New Drug</h3>
+            <form id="drug-form">
+                <label for="drug-name">Drug Name:</label>
+                <input type="text" id="drug-name" required>
+
+                <label for="dosage">Dosage:</label>
+                <input type="text" id="dosage" required>
+
+                <label for="manufacturer">Manufacturer:</label>
+                <input type="text" id="manufacturer" required>
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="date" id="expiry-date" required>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" required>
+
+                <button type="submit">Add Drug</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 University Hospital</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

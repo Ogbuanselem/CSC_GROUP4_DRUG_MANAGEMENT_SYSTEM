@@ -1,0 +1,33 @@
+#log-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#log-section h2 {
+    margin-bottom: 20px;
+}
+
+#log-content {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#log-content p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+#log-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#log-content ul li {
+    background-color: #e9ecef;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
