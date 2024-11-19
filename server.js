@@ -21,7 +21,7 @@ mongoose.connect('mongodb://localhost:27017/drug_inventory', {
 });
 
 // API Routes
-app.use('/api/drugs', drugRoutes);
+app.use('/api/drugs', drugRoutes)
 
 // Server
 const PORT = process.env.PORT || 5000;
